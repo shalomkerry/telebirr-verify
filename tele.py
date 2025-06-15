@@ -122,7 +122,7 @@ def verify_telebirr_transaction(message, expected_amount, expected_receiver, exp
     if data.get("status", "").lower() != "completed":
         errors.append("Transaction not completed")
 
-    if expected_amount>amt :
+    if expected_amount>amt   :
         errors.append(f"Amount mismatch. Expected {expected_amount}, got {amt}")
 
     actual_receiver = data.get("receiver_name", "")

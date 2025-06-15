@@ -1,2 +1,7 @@
 fastapi
 uvicorn[standard]
+re
+json
+time
+requests
+bs4
